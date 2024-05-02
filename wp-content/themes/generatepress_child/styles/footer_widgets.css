@@ -1,4 +1,25 @@
-@media screen and (min-width:900px){
+.footer-left-text, .footer-p-margin{
+    font-size: 12px;
+}
+.footer-h5-margin{
+    font-family: oswald;
+}
+@media screen and (max-width:900px){
+    .footer-info-right, .footer-center{
+        display: none;
+    }
+    .footer-info-left{
+        text-align: center;        
+    }
+    div .social-media{
+        justify-content: center;
+    }
+}
+.wp-block-button{
+    height: 50%;
+    display: flex;
+}
+/*@media screen and (min-width:900px){*/
     footer.entry-meta{
         display: none
     }
@@ -50,4 +71,4 @@
         margin-top: .5em;
         margin-bottom: 2.5em;
     }
-}
+/*}*/

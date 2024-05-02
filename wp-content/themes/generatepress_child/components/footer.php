@@ -15,7 +15,9 @@
                         <img decoding='async' class='footer-image is-logo-image' alt='waveless' src='http://localhost/stormbrand/wp-content/uploads/2024/05/logo_footer.svg'>
                     </a>
                     <div class='site max-width-40ch'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus nibh massa, laoreet non sagittis a, rutrum et ipsum. Duis dolor lacus, psuere at tellus eget, facilisis aliquam tellus. Ut vel nunc iaculis, commodo libero nec, molestie nisi. Nam congue magna asem placerat tempus.
+                        <p class = 'footer-left-text'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus nibh massa, laoreet non sagittis a, rutrum et ipsum. Duis dolor lacus, psuere at tellus eget, facilisis aliquam tellus. Ut vel nunc iaculis, commodo libero nec, molestie nisi. Nam congue magna asem placerat tempus.
+                        </p>
                     </div>
                     <div class='social-media'>
                         <aside id='block-5' class='widget inner-padding widget_block footer'>
