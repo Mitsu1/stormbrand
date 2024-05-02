@@ -1,0 +1,90 @@
+.site-header{
+	/*height: 80px;*/
+    align-content: center;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0px;
+	z-index: 1000;
+	
+}
+
+.inside-header {
+    padding: 0px 40px;
+    display: ruby-text;
+}
+.entry-header .entry-meta{
+    display: none
+}
+.strong-cp{
+    font-weight: 900;
+}
+.strong-light{
+    font-weight: 500;
+}
+.wp-social-link-instagram, .wp-social-link-facebook, .wp-social-link-youtube{
+    font-size: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 59%, #000 71%);
+}
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-facebook,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-youtube {
+    color: #000;
+    background-color: transparent;
+}
+
+.site-header .header-image,.footer-image.is-logo-image {
+    width: 180px;
+}
+.social-media {
+    justify-content: left;
+    display: flex;
+    margin-top: 30px;
+}
+.ch-bg-color-base-3.wp-block-button__link{
+    border-radius: 0px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 8px 35px;
+    transition: all 300ms ease-in-out;
+}
+.ch-bg-color-base-3.wp-block-button__link:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+    transition: all 300ms ease-in-out;
+}
+.footer-link-copyright{
+    padding-left: 20px;
+}
+
+@media screen and (min-width:900px){
+    .copyright, .gallery-content {
+        display: flex; /*Convertimos al menú en flexbox*/
+        align-items: center;
+        justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
+    }
+    .copyright-bar{
+        width: 100%;
+    }
+    .inside-site-info {
+        display: grid;
+        justify-content: initial;
+    }
+    .headband{
+        height: 32vh;
+        text-align: center;
+        align-content: center;
+        background-color: var(--base);
+    }
+    .headband-text-container{
+        justify-content: center;
+        display: flex;
+    }
+    .headband-text{
+        max-width: 75ch;
+    }
+}
