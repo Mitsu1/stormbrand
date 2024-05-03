@@ -25,7 +25,7 @@
     cursor: pointer;
     max-width: 100%;
     margin-top: 8px;
-    overflow: hidden; 
+    /*overflow: hidden; */
     display: inline-block;
     box-sizing: border-box;
     transition: 0.3s linear;
@@ -34,14 +34,24 @@
     filter: grayscale(1) brightness(0.5);
 }
 
-.gallery-left img:hover,  .gtr-left img:hover, .gtr-right img:hover{
-    transform: scale(1.01);
-    filter: grayscale(0);
-}
 .gallery-left{
+    display: inline-block;
+    box-sizing: border-box;
     max-width: 100%;
+    overflow: hidden; 
+
 }
 .gtr-left, .gtr-right{
+    /*display: inline-block;*/
+    box-sizing: border-box;
     gap: 34px;
+    max-width: 100%;
     display: grid;
+    overflow: hidden; 
+
+}
+
+.gallery-left img:hover,  .gtr-left img:hover, .gtr-right img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
 }

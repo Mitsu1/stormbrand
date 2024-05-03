@@ -1,7 +1,8 @@
 .site-header{
 	/*height: 80px;*/
     align-content: center;
-	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+	font-family: oswald; 
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0px;
@@ -75,6 +76,23 @@
 }
 .entry-header{
     display: none;
+}
+.headband-title{
+    margin-top: 20px;
+}
+h2.divider, .headband-title{
+    text-align: center;
+    font-family: oswald;
+}
+h3{
+    text-align: left;
+    font-family: oswald;
+}
+pre {
+    background: white;
+    margin-bottom: initial;
+    padding: initial;
+    overflow: initial;
 }
 @media screen and (min-width:900px){
     .copyright, .gallery-content {

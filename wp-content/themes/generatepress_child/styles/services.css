@@ -1,0 +1,17 @@
+.services{
+    width: 80%;
+    padding-top: 20px;
+}
+.card{
+    background-color: var(--base);
+}
+.card-content{
+    padding: 30px;
+}
+.card-title strong{
+    color: #0b4b4b;
+    font-weight: 800;
+}
+.white-space{
+    height: 30px;
+}

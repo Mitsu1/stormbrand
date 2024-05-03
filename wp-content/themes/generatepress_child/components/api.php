@@ -7,7 +7,7 @@ function pexels_api($params){
     $query = 'nature';// Type of images
     $total_grid = $params['id']; //Img tag destination
     $per_page = $params['total_pages'];// Number of results per page
-    $request_url = $base_url . 'search?query=' . urlencode($query) . '&per_page=' . $per_page . '&page=' . rand($per_page, 20);
+    $request_url = $base_url . 'search?query=' . urlencode($query) . '&per_page=' . $per_page;
 
     $headers = array(
         'Authorization' => 'pS5mChkG66DZPN1UCerdFxK0FYJaI3yQjRj2V4Nzns8ckDUWTXSRj6lg',
