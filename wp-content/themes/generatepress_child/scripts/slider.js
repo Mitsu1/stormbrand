@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     
     let sliders = document.querySelectorAll('[id^="slider"]');
-    console.log(sliders);
 
     sliders.forEach(function(slider) {
         let img_path = slider.getAttribute('img_path');

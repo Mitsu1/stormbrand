@@ -15,7 +15,7 @@
                         </span>
                     </div>
                     <div class = 'card-title'><strong>LOREM IPSUM DOLOR</strong></div>
-                    <div class = 'card-text'>{$card_content['text']}</div>
+                    <div id = 'card_text-{$card_content['icon']}' class = 'card-text pause_animation'>{$card_content['text']}</div>
                 </div>
             </div>
         ";

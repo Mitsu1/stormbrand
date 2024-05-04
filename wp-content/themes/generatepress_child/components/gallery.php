@@ -12,7 +12,7 @@
             <div class = 'gallery'>
                 <div id = '{$gallery_content['class']}' class = 'gallery-content'>
                     <div class = '{$gallery_content['title']}'>
-                        <img src='{$images[$gallery_content['class']]['image_path']}' alt='{$gallery_content['class']}' class = 'gallery-image'>
+                        <img src='{$images[$gallery_content['class']]['image_path']}' data-src='{$images[$gallery_content['class']]['image_path']}' alt='{$gallery_content['class']}' class = 'gallery-image' loading = 'lazy'>
                     </div>
                 </div>
             </div>";

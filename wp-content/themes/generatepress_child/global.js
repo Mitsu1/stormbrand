@@ -1,28 +1,55 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    var anchoPantalla = screen.width;
-    var altoPantalla = screen.height;
-    
-    // Imprimir la resolución en la consola
-    console.log("Ancho de la pantalla: " + anchoPantalla);
-    console.log("Alto de la pantalla: " + altoPantalla);
-    
-        // Obtener los elementos que deseas intercambiar
+    var screenWidth = screen.width;
+    let widthScreen = window.innerWidth;
+    let texts = document.querySelectorAll('[id^="card_text"]');
+    console.log(texts)   
+    if ( screenWidth < 769 ){
+
         var elementoA = document.querySelector(".header-widget");
         var elementoB = document.querySelector(".main-navigation");
         
-        // Obtener los padres de los elementos
-        console.log(elementoA)
-        console.log(elementoB)
-        var padreA = elementoA.parentNode;
         var padreB = elementoA.parentNode;
-        padreB.insertBefore(elementoA, elementoB); // Mueve el elementoB antes del elementoA
-    /*var siguienteB = elementoB.nextSibling;*/
-    //var padreB = elementoB.parentNode;
+        padreB.insertBefore(elementoA, elementoB);
+    }
     
-    // Obtener los nodos de referencia (el siguiente nodo después del elementoB)
-    /*var siguienteB = elementoB.nextSibling;
+    window.addEventListener('scroll', function() {
+        let currentScroll = document.documentElement.scrollTop;
+        for (let element = 0; element < texts.length; element++) {
+            let card_text = document.getElementById(texts[element].id);
+            let base_animation = 'pause_animation';
+            let text_animation = 'move-up-transition';
+            //console.log(card_text)
+            card_text.classList.remove(text_animation)
+            card_text.classList.add(base_animation)
+
+            if (currentScroll >= 500){
+                card_text.classList.remove(base_animation)
+                card_text.classList.add(text_animation)
+            }
+        }
+        console.log(currentScroll)
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        var options = {
+            threshold: 0.5 // Define cuánto del elemento debe estar visible antes de cargarlo
+        };
+        var lazyLoadObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.removeAttribute('data-src');
+                    lazyLoadObserver.unobserve(lazyImage);
+                }
+            });
+        }, options);
     
-    Intercambiar los elementos moviendo uno de ellos al lugar del otro
-    padreB.insertBefore(elementoA, siguienteB);*/
+        lazyImages.forEach(function(lazyImage) {
+            lazyLoadObserver.observe(lazyImage);
+        });
+    });
+    
 });
