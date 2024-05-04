@@ -28,6 +28,12 @@
                         <td><input type = 'email'></input></td>
                     </tr>
                     <tr>
+                        <th><label for='phone'  class = 'description'>Phone</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type = 'number'></input></td>
+                    </tr>
+                    <tr>
                         <th><label for='message'  class = 'description'>Your message *</label></th>
                     </tr>
                     <tr>

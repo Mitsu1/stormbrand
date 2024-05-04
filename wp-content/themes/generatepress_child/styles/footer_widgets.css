@@ -4,6 +4,7 @@
 .footer-h5-margin{
     font-family: oswald;
 }
+
 @media screen and (max-width:900px){
     .footer-info-right, .footer-center{
         display: none;
@@ -51,6 +52,7 @@
         height: 30vh;
         align-content: center;
     }
+
     .footer-widget{
         display: flex;
     }
@@ -71,4 +73,5 @@
         margin-top: .5em;
         margin-bottom: 2.5em;
     }
+
 /*}*/

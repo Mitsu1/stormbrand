@@ -7,7 +7,7 @@
 		        <div class = 'copyright-left-side'>©" 
                     . date('Y') . 
                     " All rights reserved. 
-                    <strong class='strong-cp'>STORM</strong>
+                    <strong class='strong-cp'>STORM</strong
                     <strong class='strong-light'>BRAND</strong>
                 </div>
 		        <div class = 'copyright-right-side'>
